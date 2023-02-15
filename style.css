@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#user-list-container {
+    background-color: #141414;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#user-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.user-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.user-item img {
+    width: 100%;
+    height: auto;
+}
+
+.user-item h3 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 5px;
+    padding: 0 5px;
+}
+
+.user-item p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5px;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #8c8c8c;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.user-email {
+    font-size: 0.7rem;
+    color: #8c8c8c;
+}
+
+.user-website {
+    font-size: 0.6rem;
+    color: #8c8c8c;
+}
+
+@media screen and (min-width: 500px) {
+    .user-item {
+        width: 250px;
+        height: 330px;
+    }
+
+    .user-name {
+        font-size: 1.3rem;
+    }
+
+    .user-email {
+        font-size: 0.8rem;
+    }
+
+    .user-website {
+        font-size: 0.7rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff3e47;
+}
+
+/* Add user form styles */
+#add-user-container {
+    background-color: #141414;
+    border: 1px solid #8c8c8c;
+    padding: 10px;
+}
+
+#add-user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-user-form label {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#add-user-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#add-user-form input[type="submit"] {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#add-user-form input[type="submit"]:hover {
+    background-color: #ff3e47;
+}
+
+#add-user-form input[type="text"]:focus,
+#add-user-form input[type="email"]:focus,
+#add-user-form input[type="url"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #e50914;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
+
+#search-box {
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 300px;
+    border-radius: 5% / 50%;
+}

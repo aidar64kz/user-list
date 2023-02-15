@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Developer List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="main-title">Frontend Developers List</h1>
+    <div id="search-container">
+        <input type="text" id="search-box" placeholder="Search by name...">
+    </div>
+    <div id="user-list-container">
+        <ul id="user-list"></ul>
+    </div>
+    <div id="add-user-container">
+        <h2>Add your developer friend</h2>
+        <form id="add-user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" placeholder="Website Address" required>
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
